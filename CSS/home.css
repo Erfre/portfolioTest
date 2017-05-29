@@ -1,0 +1,171 @@
+.navBar ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.navBar li {
+  font-family: 'Courier New';
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.navBar a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 1s;
+}
+
+.navBar a:hover {
+  background-color: #00909E;
+}
+
+ 
+.navBar a.active {
+      background-color: #fff;
+      color: #444;
+      cursor: default;
+}
+
+
+
+.grid ul {
+  list-style: none;
+  text-align: center;
+  padding:  30px 0px;
+  margin: 0px auto;
+  background-color: white;
+  /*width: 200px; check here for small screen support*/
+  height: 800px;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.grid img{
+  margin-top: 20px;
+  width: 210px;
+  height: 200px;
+}
+
+.grid li {
+/*  position: relative;*/
+  /*float dont make them stack*/
+  float: left;
+  font-family: 'Courier New';
+  margin-bottom: 1000px;
+  margin-left: 30px;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 300px;
+  width: 250px;
+  webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);<
+}
+
+#tape {
+  position: relative;
+}
+
+#tape:before, #tape:after{
+  content: ''; /*create a blank psuedo element, if you wanted something written on the tape, place it between the ' '*/
+  display: block;
+  position: absolute; /*positions the tape relative to the box created above rather than the whole page*/
+  background-color: rgba(220,212,176,0.85); /*using rgba for the colour lets us make the tape a little transparent*/
+  opacity: 0.6;
+  height: 30px; /*height of the tape*/
+}
+
+#tape:before { /*using :before places the tape on the left of the box*/
+  left:80px; /*position from the left edge of the #tape div - a negative value moves the tape 5px to the left of the box's edge*/
+  top: -18px; /*position from the top edge of the #tape div - a negative value moves the tape 15px above of the box's edge*/
+  width: 100px; /*width of the tape*/
+  /*rotate the tape 12 degrees anti-clockwise*/
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+}
+
+
+
+/*This is checks screen size*/
+@media screen and (min-width: 600px) {
+  .navBar li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .navBar li {
+    float: left;
+  }
+  .navBar ul {
+    overflow: auto;
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  .grid ul {
+  text-align: center;
+  padding:  30px 0px;
+  margin: 0px auto;
+  background-color: white;
+  width: 1200px;
+  height: 850px;
+  position: relative;
+  box-sizing: content-box;
+}
+ 
+}
+
+/*.homePage{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}*/
+
+.pageTrans{
+  width:400px;
+  height: 400px;
+}
+
+
+
+/*Will these be necessary?*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+h1{
+	font-size: 100px;
+	color:white;
+	text-align: center;
+	
+}
+
+#greeting{
+	width: 500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 1px;
+}
+
+#canvas{
+	display: block;
+	position: fixed;
+	z-index:-1;
+}
+#lineCanvas{
+	position: fixed;
+	z-index: -2;
+}
