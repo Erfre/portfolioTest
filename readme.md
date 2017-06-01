@@ -1,29 +1,25 @@
-	Portfolio site
+# Portfolio website
 
-This is my first try at making a portfolio page for myself. Where the main page
-is one giant canvas where balls bounce around and makes random connections to 
-each other.
+This is my first try at making a website. It was going to be my portfolio page, but I never put it up.
 
-	Installation
+## Installation
 
 1.Download this repository
 2.Navigate to HTML>index.html
 3.Open index.html in your preferred browser
 4.Sit back and enjoy watching the colorful balls flying around.
 
-	History/Goal
+### History/Goal
 
-This was a project I was thinking of using as my own personal portfolio page. 
-Although I've yet used it. 
+This project was supposed to be my own personal portfolio page.
 My main goals were to learn more about website creation and how web pages worked.
-But I still wanted to have some fun with the canvas element since I really enjoyed
-writing javascript.
+But I still wanted to have some fun with the canvas element since I really enjoyed javascript and the canvas.
 
 I still like the simplicity of the design so I might use it one day, or something
 similar. With a lot cleaner code.
 
 
-	License
+### License
 
 MIT License
 
@@ -46,4 +42,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
